@@ -30,7 +30,10 @@ from ..func.near_zero import near_zero
 )
 def test_nearest_zero(numbers, expected):
     assert near_zero(len(numbers), numbers) == expected
-
+    """
+    Измерение времени запускается командой pytest -s
+    Существенные результаты при number=10^6
+    """
     def func():
         near_zero(len(numbers), numbers)
     print()
