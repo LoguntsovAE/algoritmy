@@ -30,7 +30,7 @@ from ..func.near_zero import near_zero
     )
 )
 def test_nearest_zero(numbers, expected):
-    # assert near_zero(len(numbers), numbers) == expected
+    assert near_zero(len(numbers), numbers) == expected
 
     def func():
         near_zero(len(numbers), numbers)
